@@ -1,0 +1,100 @@
+ {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background-color: #340b1e; 
+  color: #bc4395;         
+  line-height: 1.6;
+}
+header {
+  background: linear-gradient(135deg, #0e0108 0%, #0e010b 100%);
+  color: #333232;
+  text-align: center;
+  padding: 3rem 1rem;
+  box-shadow: 0 4px 6px rgb(216, 65, 113);
+}
+header h1 {
+  font-size: 2.5rem;
+  margin-bottom: 0.5rem;
+  letter-spacing: -0.5px;
+}
+header p {
+  font-size: 1.1rem;
+  opacity: 0.9; 
+}
+#nav-links {
+  list-style:;
+  display: flex;
+  flex-direction: column; 
+  align-items: center;
+  gap: 1rem; 
+  margin-top: 1.5rem;
+}
+#nav-links a {
+  color: #a08296;
+  text-decoration: none; 
+  font-weight: 500;
+  font-size: 1.1rem;
+  padding: 0.5rem 1rem;
+  transition: all 0.3s ease; 
+  border-radius: 4px;
+}
+.nav-links a:hover {
+  background-color: rgba(160, 66, 110, 0.15); 
+  color: #603c52;
+@media (min-width: 600px) {
+  .nav-links {
+    flex-direction: row; 
+    justify-content: center; 
+    gap: 2rem; 
+  }
+}
+#projects-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  
+  gap: 2rem; 
+  padding: 2rem 0;
+
+#project-card {
+  background-color: #ffffff;
+  border-radius: 8px;
+  padding: 1.5rem;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+  display: flex;
+  flex-direction: column; 
+  gap: 0.75rem;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+#project-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 24px rgba(5, 114, 126, 0.12);
+}
+#project-image-placeholder {
+  background-color: #4c0e32;
+  height: 180px;
+  border-radius: 4px;
+}
+#project-card h3 {
+  color: #1e3c72;
+  font-size: 1.3rem;
+}
+#project-card p {
+  font-size: 0.95rem;
+  color: #6c757d;
+  flex-grow: 1; /* Pushes the button to the absolute bottom if text lengths vary */
+}
+#btn {
+  display: inline-block;
+  text-align: center;
+  background-color: #2a5298;
+  color: #ffffff;
+  text-decoration: none;
+  padding: 0.6rem 1rem;
+  border-radius: 4px;
+  font-weight: 500;
+  font-size: 0.9rem;
+}

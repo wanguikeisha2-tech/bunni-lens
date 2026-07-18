@@ -1,0 +1,366 @@
+1. GLOBAL STYLES & RESET
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #f4f4f9;
+    color: #333;
+    line-height: 1.6;
+    padding: 20px;
+}
+
+h1 {
+    text-align: center;
+    margin: 20px 0 40px;
+    color: #2c3e50;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+}
+
+   2. CLUB CARDS SECTION
+   
+.club-card {
+    display: flex;
+    flex-direction: column; 
+    gap: 15px;           
+    margin-bottom: 40px;    
+    background: #fff;       
+    padding: 20px;          
+    border-radius: 12px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.05);
+    min-width: 550px;       
+    margin-left: auto;      
+    margin-right: auto;    
+     border: 2px solid #ddd; 
+}
+.club-images-row {
+    display: flex;
+    gap: 10px;              
+    width: 100%;
+    max-width:100% ;
+border: 2px solid #ddd; 
+transition: transform 0.3s ease, box-shadow 0.3s ease, filter 0.3s ease;
+}
+.club-image:hover {
+    transform: scale(1.05); /* Scales the image up by 5% */
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.15); /* Adds a nice depth shadow */
+}
+.club-image:hover {
+    transform: translateY(-5px); /* Lifts the image up 5 pixels */
+    filter: brightness(1.1); /* Makes the image slightly brighter */
+}
+.club-images-row img {
+    flex:1 1 50% ;
+    max-width:50% - 5px ;      
+    height: 180px;          
+    object-fit: cover;      
+    border-radius: 8px;
+    border: 2px solid #ddd; 
+}
+.club-content {
+    width: 100%;
+}
+.clubs-container h2 {
+    text-align: center;
+    margin-top: 30px;
+    margin-bottom: 20px;
+    color: #2c3e50;
+}
+.club-title {
+    text-align: center;
+    margin-top: 30px;
+    margin-bottom: 10px;
+    color: #34495e;
+} 
+   3. REGISTRATION FORM
+.registration-container {
+    max-width: 650px;
+    margin: 50px auto; 
+    background-color: #ffffff;
+    padding: 40px;
+    border-radius: 12px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.08);
+    border: 1px solid #eef2f5;
+}
+
+.registration-container h2 {
+    text-align: center;
+    color: #2c3e50;
+    margin-bottom: 5px;
+    font-size: 2rem;
+}
+
+.form-subtitle {
+    text-align: center;
+    color: #7f8c8d;
+    margin-bottom: 30px;
+    font-size: 0.95rem;
+}
+
+.form-row {
+    display: flex;
+    gap: 20px;
+}
+
+.form-group {
+    margin-bottom: 22px;
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+}
+
+.form-group label {
+    font-weight: 600;
+    color: #34495e;
+    margin-bottom: 8px;
+    font-size: 0.9rem;
+}
+
+.form-group .section-label {
+    margin-bottom: 12px;
+    display: block;
+}
+
+.form-group input[type="text"],
+.form-group input[type="email"],
+.form-group input[type="tel"],
+.form-group select,
+.form-group textarea {
+    width: 100%;
+    padding: 12px;
+    border: 2px solid #e0e0e0;
+    border-radius: 6px;
+    font-size: 0.95rem;
+    background-color: #fafbfc;
+    transition: border-color 0.3s ease, background-color 0.3s ease;
+}
+
+.form-group input:focus,
+.form-group select:focus,
+.form-group textarea:focus {
+    border-color: #3498db;
+    background-color: #fff;
+    outline: none;
+}
+
+.radio-group, .checkbox-group {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+    gap: 12px;
+    background-color: #fafbfc;
+    padding: 15px;
+    border-radius: 6px;
+    border: 1px solid #eef2f5;
+}
+
+.radio-label, .checkbox-label {
+    font-weight: normal !important;
+    font-size: 0.9rem;
+    color: #555 !important;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    cursor: pointer;
+}
+
+.button-group {
+    display: flex;
+    gap: 15px;
+    margin-top: 30px;
+}
+
+.btn {
+    flex: 1;
+    padding: 14px;
+    font-size: 1rem;
+    font-weight: 600;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.1s ease;
+}
+
+.btn-submit {
+    background-color: #3498db;
+    color: white;
+}
+
+.btn-submit:hover {
+    background-color: #2980b9;
+}
+
+.btn-reset {
+    background-color: #e0e0e0;
+    color: #333;
+}
+
+.btn-reset:hover {
+    background-color: #d5d5d5;
+}
+
+.btn:active {
+    transform: scale(0.98);
+}
+
+
+/* ==========================================================================
+   4. TREASURE HUNT HOVER ELEMENT
+   ========================================================================== */
+.treasure-hunt-container {
+    display: flex;
+    justify-content: center;
+    margin: 40px auto;
+    padding: 10px;
+}
+
+.treasure-chest {
+    position: relative;
+    width: 100%;
+    max-width: 450px;
+    height: 80px;
+    background: #fffdf0; 
+    border: 2px dashed #f1c40f; 
+    border-radius: 12px;
+    cursor: pointer;
+    overflow: hidden;
+    transition: all 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.03);
+}
+
+.chest-closed {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 12px;
+    padding: 15px;
+    transition: transform 0.4s ease, opacity 0.3s ease;
+}
+
+.treasure-key {
+    font-size: 1.8rem;
+    transition: transform 0.4s ease;
+}
+
+.treasure-hint {
+    font-size: 0.9rem;
+    color: #b7950b;
+    font-weight: 600;
+    letter-spacing: 0.5px;
+}
+
+.chest-open {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    padding: 15px;
+    background: #fdf6e2;
+    opacity: 0;
+    transform: translateY(100%); 
+    transition: transform 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275), opacity 0.3s ease;
+}
+
+.treasure-sparkle {
+    font-size: 1.5rem;
+}
+
+.treasure-fact {
+    font-size: 0.95rem;
+    color: #7d6608;
+    text-align: center;
+}
+
+.treasure-chest:hover {
+    border-style: solid;
+    border-color: #f39c12;
+    box-shadow: 0 8px 16px rgba(243, 156, 18, 0.15);
+    transform: scale(1.03);
+}
+
+.treasure-chest:hover .chest-closed {
+    opacity: 0;
+    transform: translateY(-100%);
+}
+
+.treasure-chest:hover .treasure-key {
+    transform: rotate(45deg);
+}
+
+.treasure-chest:hover .chest-open {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+
+/* ==========================================================================
+   5. PHOTO GALLERY GRID
+   ========================================================================== */
+.gallery-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+    gap: 20px; 
+}
+
+.gallery-item {
+    background-color: #fff;
+    border: 2px solid #ddd;
+    padding: 15px;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    overflow: hidden; 
+    display: flex;
+    flex-direction: column;
+}
+
+.gallery-item:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 15px rgba(0,0,0,0.2);
+    border-color: #3498db;
+}
+
+.gallery-item img {
+    width: 100%;
+    height: 200px; 
+    object-fit: cover; /* Keeps aspect ratio clean without stretching */
+    border-radius: 4px;
+    transition: transform 0.3s ease;
+}
+
+.gallery-item:hover img {
+    transform: scale(1.05);
+}
+
+.caption {
+    margin-top: 15px;
+    text-align: center;
+    font-size: 0.9rem;
+    color: #555;
+    font-weight: 600;
+}
+
+
+/* ==========================================================================
+   6. RESPONSIVE MEDIA QUERIES
+   ========================================================================== */
+@media (max-width: 600px) {
+    .form-row {
+        flex-direction: column;
+        gap: 0;
+    }
+    .registration-container {
+        padding: 20px;
+        margin: 20px;
+    }
+}
