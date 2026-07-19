@@ -7,15 +7,14 @@ box-sizing: border-box;
 html, body {
 scroll-behavior: smooth;
 font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-background-color: #1a0826; /* Deep, intense midnight grape background */
-color: #fff4e0; /* Soft cream text for striking contrast */
+background-color: #1a0826; 
+color: #fff4e0; 
 }
 
-/* Full-screen Single Photo Hero Section */
 .Hero {
-height: 80vh; /* Takes up 80% of the screen height */
+height: 80vh; 
 background-image: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.4)),
-url('https://i.pinimg.com/736x/67/e6/27/67e627f0582387a5bd2ed22edf9e0587.jpg'); /* Your exact image link */
+url('https://i.pinimg.com/736x/67/e6/27/67e627f0582387a5bd2ed22edf9e0587.jpg'); 
 background-size: cover;
 background-position: center;
 display: flex;
@@ -41,11 +40,11 @@ color: #fff4e0;
 text-shadow: 1px 1px 5px rgba(0, 0, 0, 0.6);
 }
 
-/* Navigation Bar Sitting Below the Image */
+
 header {
-background-color: #ff2a74; /* Loud maximalist electric pink */
+background-color: #ff2a74; 
 padding: 20px 0;
-position: sticky; /* Sticky menu locks to the top on scroll */
+position: sticky; 
 top: 0;
 z-index: 1000;
 box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
@@ -72,7 +71,7 @@ transition: color 0.3s ease;
 }
 
 .nav-links a:hover {
-color: #1a0826; /* Deep midnight grape on hover */
+color: #1a0826; 
 }
 
 
@@ -84,7 +83,6 @@ padding: 40px 20px;
 justify-content: center;
 }
 
-/* Individual Photo Cards */
 .photo-card {
 background-color: rgba(255, 255, 255, 0.05);
 border: 1px solid rgba(255, 255, 255, 0.2);
