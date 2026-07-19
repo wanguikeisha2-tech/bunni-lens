@@ -1,16 +1,14 @@
-** {
+* {
 margin: 0;
 padding: 0;
 box-sizing: border-box;
 }
-
 html, body {
 scroll-behavior: smooth;
 font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 background-color: #1a0826; 
 color: #fff4e0; 
 }
-
 .Hero {
 height: 80vh; 
 background-image: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.4)),
@@ -24,7 +22,6 @@ align-items: center;
 text-align: center;
 padding: 20px;
 }
-
 .Hero h1 {
 font-size: 3.5rem;
 text-transform: uppercase;
@@ -33,14 +30,11 @@ margin-bottom: 10px;
 color: #fff4e0;
 text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.6);
 }
-
 .Hero .intro-text {
 font-size: 1.2rem;
 color: #fff4e0;
 text-shadow: 1px 1px 5px rgba(0, 0, 0, 0.6);
 }
-
-
 header {
 background-color: #ff2a74; 
 padding: 20px 0;
@@ -49,18 +43,15 @@ top: 0;
 z-index: 1000;
 box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
 }
-
 .main-navigation {
 display: flex;
 justify-content: center;
 }
-
 .nav-links {
 list-style: none;
 display: flex;
 gap: 40px;
 }
-
 .nav-links a {
 text-decoration: none;
 color: #fff4e0;
@@ -69,12 +60,9 @@ font-size: 1.1rem;
 letter-spacing: 1px;
 transition: color 0.3s ease;
 }
-
 .nav-links a:hover {
 color: #1a0826; 
 }
-
-
 .gallery-grid {
 display: flex;
 flex-wrap: wrap;
@@ -82,7 +70,6 @@ gap: 20px;
 padding: 40px 20px;
 justify-content: center;
 }
-
 .photo-card {
 background-color: rgba(255, 255, 255, 0.05);
 border: 1px solid rgba(255, 255, 255, 0.2);
@@ -92,19 +79,17 @@ width: 280px;
 text-align: center;
 box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
 }
-
-/* Images inside the cards */
 .photo-card img {
 width: 100%;
 height: 200px;
 object-fit: cover;
 border-radius: 4px;
 }
-
-/* Captions underneath the images */
 .photo-card .Caption {
 margin-top: 12px;
 font-size: 1rem;
 color: #fff4e0;
 font-weight: 500;
 }
+.bio-section
+
