@@ -91,5 +91,50 @@ font-size: 1rem;
 color: #fff4e0;
 font-weight: 500;
 }
+.bio-section {
+    padding: 60px 20px;
+    background-color: #ff2a74;
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+}
 
+.bio-container {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 50px;
+    max-width: 1000px;
+    width: 100%;
+    margin: 0 auto;
+}
+.bio-container img {
+    width: 180px;
+    height: 220px;
+    object-fit: cover;
+    border: 3px solid rgba(255, 244, 224, 0.4);
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.4);
+    flex-shrink: 0;
+}
+.bio-text {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
 
+.bio-section h2 {
+    font-size: 2.2rem;
+    color: #1a0826;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    margin-top: 0;
+    margin-bottom: 15px;
+}
+
+.bio-text p {
+    font-size: 1.1rem;
+    line-height: 1.8;
+    color: #fff4e0;
+    margin: 0;
+}
