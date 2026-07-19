@@ -7,7 +7,7 @@ html, body {
 scroll-behavior: smooth;
 font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 background-color: #1a0826; 
-color: #fff4e0; 
+color: #1a0826; 
 }
 .Hero {
 height: 80vh; 
@@ -27,12 +27,12 @@ font-size: 3.5rem;
 text-transform: uppercase;
 letter-spacing: 2px;
 margin-bottom: 10px;
-color: #fff4e0;
+color: #ff2a74;
 text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.6);
 }
 .Hero .intro-text {
 font-size: 1.2rem;
-color: #fff4e0;
+color: #ff2a74;
 text-shadow: 1px 1px 5px rgba(0, 0, 0, 0.6);
 }
 header {
@@ -54,7 +54,7 @@ gap: 40px;
 }
 .nav-links a {
 text-decoration: none;
-color: #fff4e0;
+color: #1a0826;
 font-weight: bold;
 font-size: 1.1rem;
 letter-spacing: 1px;
@@ -88,7 +88,7 @@ border-radius: 4px;
 .photo-card .Caption {
 margin-top: 12px;
 font-size: 1rem;
-color: #fff4e0;
+color: #1a0826;
 font-weight: 500;
 }
 .bio-section {
