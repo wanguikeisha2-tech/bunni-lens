@@ -11,7 +11,7 @@ a short biography, and a contact form for visitors to get in touch.
 (https://github.com/wanguikeisha2-tech/bunni-lens.git)
 
 * **Link to Website**
- (https://wanguikeisha2-tech.github.io/bunni-lens/)
+ https://github.com/wanguikeisha2-tech/bunni-lens
 
 ## License
 MIT Licencing
